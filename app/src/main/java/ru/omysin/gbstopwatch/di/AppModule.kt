@@ -16,6 +16,7 @@ val appModule = module {
     single(qualifier = named("stopwatch_orchestrator")) {
         StopwatchListOrchestrator(
             get(qualifier = named("stopwatch_state_holder")),
+            get(qualifier = named("coroutine_scope")),
             get(qualifier = named("coroutine_scope"))
         )
     }
