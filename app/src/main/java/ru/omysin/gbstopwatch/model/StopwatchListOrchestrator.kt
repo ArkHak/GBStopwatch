@@ -77,11 +77,11 @@ class StopwatchListOrchestrator(
         when (stopwatchNumber) {
             STOPWATCH_FIRST -> {
                 scopeFirst.coroutineContext.cancelChildren()
-                jobFirst = null
+//                jobFirst = null
             }
             STOPWATCH_SECOND -> {
                 scopeSecond.coroutineContext.cancelChildren()
-                jobSecond = null
+//                jobSecond = null
             }
             STOPWATCH_ALL -> {
                 stopJob(STOPWATCH_FIRST)
